@@ -10,3 +10,5 @@ def check_prime(val):
 
 data = 10
 print(check_prime(data))
+
+
