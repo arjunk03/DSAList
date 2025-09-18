@@ -39,7 +39,12 @@ def count_dig_bitwise(n):
         
     return cnt
 
-n = 1233425
+import math
+def count_digits_log(n):
+    return int(math.log10(n) + 1)
+
+n = 123342556454545
 # print(n.bit_count())
 # print(n.bit_length())
-print(count_dig_bitwise(n))
+# print(count_dig_bitwise(n))
+print(count_digits_log(n))
