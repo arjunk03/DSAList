@@ -8,7 +8,7 @@ def check_prime(val):
         
     return True
 
-data = 10
+data = 11
 print(check_prime(data))
 
 
