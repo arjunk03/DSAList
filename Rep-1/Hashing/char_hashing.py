@@ -12,8 +12,8 @@ def check_freq(a, b):
     for val in a:
         freq_list[ord(val)-ord("a")] += 1
 
-    for val in b:
-        print("val :", val, freq_list[ord(val)-ord("a")])
+        for val in b:
+            print("val :", val, freq_list[ord(val)-ord("a")])
 
 
 a = "arjunistestingr"
