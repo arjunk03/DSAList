@@ -34,5 +34,37 @@ print(start, end)
 
 # optimal
 
-l = 0
-r = len(a) - 1
+def lower_bound(a, tgt):
+    l = 0
+    r = len(a) - 1
+    lb = -1
+    while l <= r:
+        mid = l + (r-l)//2
+        if a[mid] >= tgt:
+            lb = mid
+            r = mid -1
+        else:
+            l = mid + 1
+    return lb
+
+def upper_bound(a, tgt):
+    l = 0
+    r = len(a) - 1
+    ub = -1
+    while l <= r:
+        mid = l + (r-l)//2
+        if a[mid] > tgt:
+            ub = mid
+            r = mid - 1
+        else:
+            l = mid + 1
+    return ub
+
+start = lower_bound(a, tgt)
+end = upper_bound(a, tgt) - 1
+
+print(start, end)
+
+
+
+
